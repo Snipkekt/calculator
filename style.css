@@ -5,14 +5,36 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 button {
+    background-color: rgb(0, 69, 129);
+    font-size: large;
+    font-weight: bold;
     border-style: none;
-    border-radius: 4px;
+    border-radius: 50px;
+    color: white;
+    margin: 4px;
+
 }
+
 button:hover {
+    transition: 0.1s;
     background-color: aqua;
+    box-shadow: 0 0 30px rgb(0, 255, 195);
+    cursor: pointer;
+    color: black;
 }
-.container, .calculator-body{
+
+button:active {
+    transition: 0.01s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 60px rgb(255, 255, 255);
+    scale: 0.9;
+    
+}
+
+.container,
+.calculator-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,15 +42,18 @@ button:hover {
     gap: 5px;
     padding-top: 50px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 70px);
     height: 400px;
     gap: 5px;
 }
+
 .grid-item16 {
     grid-column: span 2;
 }
+
 .grid-item18 {
     grid-column-start: 4;
     grid-row-start: 4;
@@ -36,8 +61,8 @@ button:hover {
 }
 
 .min-display {
-    background-color: aqua;
-    color: black;
+    background-color: rgb(41, 34, 0);
+    color: rgb(0, 183, 255);
     align-self: flex-end;
     font-size: small;
     height: 15px;
@@ -48,9 +73,10 @@ button:hover {
     padding: 5px;
     border-radius: 4px;
 }
+
 .big-display {
-    background-color:rgb(161, 175, 175);
-    color: black;
+    background-color: rgb(21, 21, 21);
+    color: white;
     align-self: flex-end;
     height: 30px;
     width: 287px;
